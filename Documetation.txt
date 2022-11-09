@@ -1,0 +1,27 @@
+Documentation of my implementation of Printf()
+----------------------------------------------
+What is printf():
+
+
+Syntax Of Printf();
+
+
+* What is vardic Function 
+-----------------------------------------------
+
+va_list => Type (Struct pre drfine on stdarg  ) hold info of args list (lipasina flparametre)
+--------------------------------------------------------------------------------------------------
+va_start(args,) => function take your args and last fixed arguments begin passed to the function
+Parameters
+ap − This is the object of va_list and it will hold the information needed to retrieve the additional arguments with va_arg.
+
+last_arg − This is the last known fixed argument being passed to the function.
+--------------------------------------------------
+va_arg ==> that allow us to acees to the next vardic function
+
+       Parametre:> 1 :arg; they point to the args
+                   2 : it takes Data type (int ,,,,,)
+------------------------------------------------------------------
+va_end == >
+          va_end(va_list ap)This ends the traversal of the variadic function arguments.
+---------------------------------------------------------------
