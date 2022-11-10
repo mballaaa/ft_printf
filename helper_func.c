@@ -6,7 +6,7 @@
 /*   By: mballa <mballa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 07:57:06 by mballa            #+#    #+#             */
-/*   Updated: 2022/11/09 10:33:34 by mballa           ###   ########.fr       */
+/*   Updated: 2022/11/10 08:19:51 by mballa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	ft_putnbr(int nb)
 		count += ft_putnbr(nb / 10);
 		return (count += ft_putchar(nb % 10 + '0'));
 	}
-	return (count += ft_putchar(nb % 10 + '0'));
+	return (count += ft_putchar(nb + '0'));
 }
 
 int	ft_putnbr_base(unsigned long long nb, char *base)

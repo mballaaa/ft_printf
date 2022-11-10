@@ -6,7 +6,7 @@
 /*   By: mballa <mballa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 18:07:31 by mballa            #+#    #+#             */
-/*   Updated: 2022/11/09 10:13:25 by mballa           ###   ########.fr       */
+/*   Updated: 2022/11/10 10:20:00 by mballa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,9 @@ int	ft_printf(const char *str, ...)
 		}
 		else
 			len += ft_putchar(str[i]);
+		i++;
 		if (!str[i])
 			break ;
-		i++;
 	}
 	va_end(args);
 	return (len);
@@ -72,6 +72,14 @@ int	ft_printf(const char *str, ...)
 // 	// char s[]="sd";
 // 	// char c='c';
 //     //  ft_printf("%x",a);
-// 	// ft_printf("%d %s %c %x %X %p",)
-	//
+// 	//int j=ft_printf("%u",42947295);
+// 	//printf("%d",j);
+	
+// 	  //printf("%%%");
+// 	 // printf("\n");
+// 	 // printf("%%%");
+// 	// int a =printf("%r");
+// 	// printf("%d",a);
+// 	int a=4;
+// 	ft_printf("%p",&a);
 // }
